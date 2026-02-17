@@ -17,6 +17,28 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Shane Edelstein",
   description: "Personal portfolio of a CS student and full stack developer.",
+  openGraph: {
+    title: "Shane Edelstein",
+    description: "Personal portfolio of a CS student and full stack developer.",
+    url: "https://shaneedelstein.com",
+    siteName: "Shane Edelstein",
+    images: [
+      {
+        url: "/website.png",
+        width: 1200,
+        height: 630,
+        alt: "Shane Edelstein Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shane Edelstein",
+    description: "Personal portfolio of a CS student and full stack developer.",
+    images: ["/website.png"],
+  },
 };
 
 export default function RootLayout({
