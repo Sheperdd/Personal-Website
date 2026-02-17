@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
 
 const skills = [
   "Java",
@@ -77,21 +75,31 @@ export function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.1,
+                  delayChildren: 0.4,
+                },
+              },
+            }}
             className="bg-muted p-4 rounded-2xl lg:col-span-2 mt-12"
           >
             <h3 className="text-xl font-bold mb-6">Technical Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <motion.span
                   key={skill}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: { opacity: 1, scale: 1 },
+                  }}
+                  transition={{ duration: 0.3 }}
                   className="px-4 py-2 bg-background rounded-full text-sm font-medium shadow-sm border"
                 >
                   {skill}
@@ -100,21 +108,31 @@ export function About() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.1,
+                  delayChildren: 2.5, // Start after Technical Skills finish
+                },
+              },
+            }}
             className="bg-muted p-4 rounded-2xl lg:col-span-2"
           >
             <h3 className="text-xl font-bold mb-6">Workplace Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {softSkills.map((skill, index) => (
+              {softSkills.map((skill) => (
                 <motion.span
                   key={skill}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: 2.5 + index * 0.1 }}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: { opacity: 1, scale: 1 },
+                  }}
+                  transition={{ duration: 0.3 }}
                   className="px-4 py-2 bg-background rounded-full text-sm font-medium shadow-sm border"
                 >
                   {skill}
