@@ -37,7 +37,7 @@ const projects = [
     description:
       "A modern, responsive, and interactive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features smooth animations and a dynamic dark mode, as well as device-specific layouts.",
     tags: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/Sheperdd",
+    github: "https://github.com/Sheperdd/Personal-Website",
     image: "/website.png",
   },
   {
