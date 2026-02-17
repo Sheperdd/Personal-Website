@@ -9,6 +9,7 @@ const skills = [
   "Java",
   "Python",
   "C/C++",
+  "Linux",
   "SQL",
   "TypeScript",
   "JavaScript",
@@ -18,6 +19,8 @@ const skills = [
   "React Native",
   "MongoDB",
   "PostgreSQL",
+  "Supabase",
+  "Jackson",
   "Git",
   "RESTful APIs",
   "tRPC",
@@ -39,7 +42,7 @@ const softSkills = [
 
 export function About() {
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="bg-background pb-20">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_2fr] items-center">
           <motion.div

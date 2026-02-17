@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Personal Portfolio. All rights reserved.
+          © {new Date().getFullYear()} Shane Edelstein. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <a
