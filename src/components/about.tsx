@@ -55,9 +55,8 @@ export function About() {
             <div className="relative h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
               <Image src="/me.png" alt="Profile" fill className="object-cover" />
             </div>
-            {/* Decoratiive circle */}
-            <div className="absolute -inset-4 rounded-full border border-primary/20 -z-10 animate-pulse" />
           </motion.div>
+          <div className="absolute -inset-4 rounded-full border border-primary/20 -z-10 animate-pulse" />
 
           <motion.div
             initial={{ opacity: 0, x: 20 }}
