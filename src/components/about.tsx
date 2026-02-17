@@ -114,7 +114,7 @@ export function About() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  transition={{ duration: 0.3, delay: 2.5 + index * 0.1 }}
                   className="px-4 py-2 bg-background rounded-full text-sm font-medium shadow-sm border"
                 >
                   {skill}
