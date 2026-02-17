@@ -91,36 +91,36 @@ export function About() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
                   className="px-4 py-2 bg-background rounded-full text-sm font-medium shadow-sm border"
                 >
                   {skill}
                 </motion.span>
               ))}
             </div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="bg-muted p-4 rounded-2xl lg:col-span-2"
-            >
-              <h3 className="text-xl font-bold mb-6">Workplace Skills</h3>
-              <div className="flex flex-wrap gap-2">
-                {softSkills.map((skill, index) => (
-                  <motion.span
-                    key={skill}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: index * 0.05 }}
-                    className="px-4 py-2 bg-background rounded-full text-sm font-medium shadow-sm border"
-                  >
-                    {skill}
-                  </motion.span>
-                ))}
-              </div>
-            </motion.div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="bg-muted p-4 rounded-2xl lg:col-span-2"
+          >
+            <h3 className="text-xl font-bold mb-6">Workplace Skills</h3>
+            <div className="flex flex-wrap gap-2">
+              {softSkills.map((skill, index) => (
+                <motion.span
+                  key={skill}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  className="px-4 py-2 bg-background rounded-full text-sm font-medium shadow-sm border"
+                >
+                  {skill}
+                </motion.span>
+              ))}
+            </div>
           </motion.div>
           
         </div>
