@@ -16,10 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Shane Edelstein",
-  description: "Personal portfolio of a CS student and full stack developer.",
+  description: "Personal portfolio of Shane Edelstein, a CS student at Western University specializing in Full-Stack Development, C++, and Next.js.",
+  keywords: ["Shane Edelstein", "Software Engineer", "Full-Stack Development", "C++", "Next.js", "Western University", "Computer Science", "Robotics", "Programming Instructor", "Portfolio"],
   openGraph: {
     title: "Shane Edelstein",
-    description: "Personal portfolio of a CS student and full stack developer.",
+    description: "Personal portfolio of Shane Edelstein, a CS student at Western University specializing in Full-Stack Development, C++, and Next.js.",
     url: "https://shaneedelstein.com",
     siteName: "Shane Edelstein",
     images: [
