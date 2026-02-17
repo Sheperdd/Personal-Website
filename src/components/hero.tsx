@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
 
 export function Hero() {
   return (
@@ -17,10 +17,10 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="space-y-4"
         >
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-[8rem]">
             Hi, I'm <span className="text-primary">Shane Edelstein</span>
           </h1>
-          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+          <p className="mx-auto max-w-[900px] text-gray-500 text-xl md:text-2xl lg:text-3xl dark:text-gray-400">
             Computer Science Student at Western University. Passionate about Full Stack Development, AI, and building scalable digital experiences.
           </p>
         </motion.div>
@@ -29,22 +29,44 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-wrap items-center justify-center gap-6"
         >
           <Link
             href="#projects"
-            className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex h-14 items-center justify-center rounded-md bg-primary px-8 text-lg font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
           >
-            View Projects
-            <ArrowRight className="ml-2 h-4 w-4" />
+            Projects
+            <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
           <Link
             href="/resume.pdf"
             target="_blank"
-            className="inline-flex h-12 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex h-14 items-center justify-center rounded-md border border-input bg-background px-8 text-lg font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
           >
-            Download Resume
-            <Download className="ml-2 h-4 w-4" />
+            Resume
+            <Download className="ml-2 h-5 w-5" />
+          </Link>
+          <Link
+            href="#contact"
+            className="inline-flex h-14 items-center justify-center rounded-md border border-input bg-background px-8 text-lg font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+          >
+            Contact
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/shaneedelstein/"
+            target="_blank"
+            className="inline-flex h-14 items-center justify-center rounded-md border border-input bg-background px-8 text-lg font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+          >
+            LinkedIn
+            <Linkedin className="ml-2 h-5 w-5" />
+          </Link>
+          <Link
+            href="https://github.com/Sheperdd"
+            target="_blank"
+            className="inline-flex h-14 items-center justify-center rounded-md border border-input bg-background px-8 text-lg font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+          >
+            GitHub
+            <Github className="ml-2 h-5 w-5" />
           </Link>
         </motion.div>
       </div>
