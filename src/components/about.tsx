@@ -66,12 +66,16 @@ export function About() {
               About Me
             </h2>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              I am an Honors Computer Science student at Western University (Class of 2027) specializing in full-stack development and system architecture. My technical work focuses on building scalable applications using modern tools like Next.js, React Native, and OpenAI. 
+              I am an Honors Computer Science student at Western University (Class of 2027)
+              specializing in full-stack development and system architecture. My technical work
+              focuses on building scalable applications using modern tools like Next.js, React
+              Native, and OpenAI.
             </p>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              Complementing this, my background as a robotics mentor and programming instructor has honed my ability to deconstruct complex algorithmic problems—a skill I apply to writing clean, structured, and maintainable code.
+              Complementing this, my background as a robotics mentor and programming instructor has
+              honed my ability to deconstruct complex algorithmic problems, a skill I apply to
+              writing clean, structured, and maintainable code.
             </p>
-
           </motion.div>
 
           <motion.div
@@ -140,7 +144,6 @@ export function About() {
               ))}
             </div>
           </motion.div>
-          
         </div>
       </div>
     </section>

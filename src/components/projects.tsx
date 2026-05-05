@@ -5,15 +5,24 @@ import { Github, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { image } from "framer-motion/client";
 
 const projects = [
+  {
+    title: "TorqueDesk",
+    description:
+      "Full-stack automotive repair management app for customers and mechanics, covering booking, messaging, and job tracking. Built a C++20 async REST server with SQLite, JWT auth, role-based access, and coroutine-based concurrency. Desktop client delivered via Qt5 with CMake/Ninja and GoogleTest coverage.",
+    tags: ["C++20", "Qt5", "SQLite", "JWT", "GoogleTest"],
+    github: "https://github.com/Sheperdd/TorqueDesk",
+    image: "/torque_desk.png",
+  },
   {
     title: "Min-Max Life (Productivity)",
     description:
       "Gamified productivity app using React Native (Expo), TypeScript, and Supabase. Features reduced manual input via OpenAI GPT-4 API for automatic quest assignment and real-time stat visualization.",
     tags: ["React Native", "TypeScript", "Supabase", "OpenAI", "TanStack Query"],
     github: "https://github.com/Sheperdd/min_max",
-    image: "/min_max.png", 
+    image: "/min_max.png",
   },
   {
     title: "Multi-tenant E-Commerce",
@@ -30,7 +39,7 @@ const projects = [
     tags: ["Java", "JUnit", "Jackson", "Figma", "Game Dev"],
     github: "https://github.com/Sheperdd/Legend-of-a-Missing-Diamond",
     image: "/diamond.png",
-    download: "/Legend-Of-A-Missing-Diamond.jar", 
+    download: "/Legend-Of-A-Missing-Diamond.jar",
   },
   {
     title: "Personal Website",
@@ -47,7 +56,7 @@ const projects = [
     tags: ["C++", "Linux", "wxWidgets"],
     github: "https://github.com/Sheperdd/File_Manager",
     image: "/file-manager.png",
-  }
+  },
   // {
   //   title: "Project Stealth (In Progress)",
   //   description:
@@ -88,20 +97,13 @@ export function Projects() {
               className="group relative flex flex-col overflow-hidden rounded-lg border bg-background shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="aspect-video bg-muted relative overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
+                <Image src={project.image} alt={project.title} fill className="object-cover" />
               </div>
-              
+
               <div className="flex flex-col flex-1 p-6">
                 <h3 className="text-xl font-bold">{project.title}</h3>
-                <p className="mt-2 text-muted-foreground flex-1">
-                  {project.description}
-                </p>
-                
+                <p className="mt-2 text-muted-foreground flex-1">{project.description}</p>
+
                 <div className="mt-4 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
